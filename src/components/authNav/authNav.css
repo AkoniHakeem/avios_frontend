@@ -1,0 +1,8 @@
+.auth-nav-button {
+    color: whitesmoke;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    outline-offset: .2rem ;
+    cursor: pointer;
+}

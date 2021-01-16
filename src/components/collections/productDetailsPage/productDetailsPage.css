@@ -1,0 +1,9 @@
+.product-details-page-container{
+    margin: 1%;
+    position: relative;
+}
+
+.product-action-style{
+    position: absolute;
+    right:2rem;
+}

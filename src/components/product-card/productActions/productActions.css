@@ -1,0 +1,13 @@
+.product-action-btn {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: .1rem solid #002e6b;
+    border-radius: 1rem;
+    color:  #002e6b;
+    padding: .5rem;
+    font-size: .7rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}

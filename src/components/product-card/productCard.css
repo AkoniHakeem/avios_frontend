@@ -1,0 +1,14 @@
+.productCard {
+    border: none;
+    /* border: .2rem solid #002e6b;
+    border-radius: .5rem; */
+    padding: 1rem;
+    width: 35%;
+    margin: 1%;
+
+}
+
+.product-image {
+    width: 98%;
+    height: 90%;
+}

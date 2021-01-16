@@ -1,0 +1,89 @@
+.side-bar {
+    width: 20rem;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -22rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+
+}
+
+.side-bar-open {
+    left: 0;
+    transition: 1s;
+}
+
+.side-bar-close {
+    left: -22rem;
+    transition: .5s;
+}
+
+.side-bar-header {
+    background-color: #06326b;
+    height: 4.6rem;
+    position: relative;
+}
+
+.close {
+    background-color: transparent;
+    height: 1.4rem;
+    border: none;
+    outline: none;
+    width: 3rem;
+    height: 4rem;
+    position: absolute;
+    top: 1.7rem;
+    right: .1rem;
+    cursor: pointer;
+}
+
+.bar {
+    width: 1.5rem;
+    height: .1rem;
+    background-color: whitesmoke;
+    margin: .1rem;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.bar:nth-child(2) {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.side-bar-main-content {
+    background-color: white;
+    grid-row: 2/-1;
+    height:100%;
+    width: 100%;
+    border: .1rem solid #06326b;
+    color: #06326b;
+}
+
+.side-bar-content {
+    margin-left: 2rem;
+    padding: 0;
+
+}
+
+.side-bar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.side-bar-list-item {
+    margin-top: 1rem;
+}
+.company-url {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

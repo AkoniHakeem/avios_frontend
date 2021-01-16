@@ -1,0 +1,21 @@
+.checkout {
+    color: var(--text-color);
+    position: relative;
+}
+
+.checkout-btn {
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #002e6b;
+    color: whitesmoke;
+    position: relative;
+    left: 17rem;
+    margin-top: .5rem;
+}
+/* .checkout-form{
+    color: var(--text-color);
+    width: 22.5rem;
+    box-shadow: .1rem 0 .4rem .4rem #a0aab8;
+    padding: 1rem;
+    margin: .5rem; 
+} */

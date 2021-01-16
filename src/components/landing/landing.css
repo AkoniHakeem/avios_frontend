@@ -1,0 +1,87 @@
+
+.container {
+    display: grid;
+    color: whitesmoke;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+}
+
+.nav-bar {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--background-color);
+    padding-bottom: 1rem;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: baseline;
+}
+
+.nav-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+}
+
+.menu-bars {
+    padding: .2rem;
+    width: 2.6 ;
+    height: 2rem;
+    position: absolute;
+    top: 1.4rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu-bars:focus{
+    border: .1rem solid white;
+    border-radius: .2rem;
+}
+
+.menu-bar {
+    width: 1.2rem;
+    height: .1rem;
+    background-color: whitesmoke;
+    margin: .1rem;
+    border-radius: .5rem;
+}
+
+.company-name {
+    margin: 1.5rem 0 2rem 3.5rem;
+}
+
+.side-bar-container {
+    position: fixed;
+    outline: none;
+    border: none;
+    z-index: 1;
+}
+
+
+.side-bar-container-close {
+    width: 0;
+    transition: .05s;
+}
+
+.main-content-wrapper {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    height: 80vh;
+}
+
+.footer {
+    color: #002e6b;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    width: 100%;
+    border-top: .1rem solid #002e6b ;
+}

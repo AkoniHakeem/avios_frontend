@@ -1,0 +1,13 @@
+.product-details {
+    color: rgb(0, 0, 14);
+    font-weight: 400;
+    font-size: .8rem;
+    width: 100%
+}
+
+.product-price {
+    display: block;
+    color: rgb(3, 1, 17);
+    margin: .5rem 0;
+    font-weight: bold;
+}
