@@ -52,7 +52,7 @@ const ProductDetailsPage = function (props) {
                 description={props.prod.product_description}/>
             </div>
             <div className="product-action-style">
-            <ProductActions product={prod_varieties} quantityArray={[1,2]}/>
+            <ProductActions product={props.prod} quantityArray={[1,2]}/>
             </div>
             {/* more details area */}
             <div className="more-details-area">
