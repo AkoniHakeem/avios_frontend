@@ -1,0 +1,12 @@
+.products-list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.products-list-img {
+    width: 5rem;
+    height: 4rem;
+    border: .1rem solid var(--border-color);
+    margin-right: 1rem;
+}
