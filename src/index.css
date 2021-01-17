@@ -36,6 +36,16 @@ body {
     background-color: var(--background-color);
 }
 
+.hr{
+  width: 100%;
+  margin-left: .2rem;
+  margin-bottom: 2rem;
+  height: .1rem;
+  position: absolute;
+  left: .25rem;;
+  background-color: var(--background-color);
+}
+
 
 .label-input-group{
   display: flex;

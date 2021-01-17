@@ -8,13 +8,13 @@ const ProductCard = (props) => {
     return(
         <div className="productCard">
             <div >
-                <Link to={`${path}/${props.productName.split(" ").join("-")}/${props.productId}`}>
+                <Link to={`${path}${props.productName.split(" ").join("-")}/${props.productId}`}>
                  <img className="product-image" alt="black shoe" src={props.productImage}></img>
                 </Link>
             </div>
             <div>
                 <ProductDetail name={props.productName} description={props.productDescription} price={props.productPrice} />
-                <ProductActions />
+                <ProductActions product={props.prod}/>
             </div>
         </div>
     )

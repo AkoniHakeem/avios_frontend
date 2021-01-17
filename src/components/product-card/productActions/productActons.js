@@ -6,11 +6,9 @@ const ProductActions = (props) => {
     const appContext = useContext(AppContext)
     let [selection, setSelection] = useState(1);// initialization helps to ensure there is always 
                                     //cart count of 1 to add when the select tags are not available
-    const productQuantityToAdd = Number(selection)
     const addToCart = function () {
-        setSelection(selection)
         const cartDispatch = appContext.cartContext.cartDispatch
-        cartDispatch({type:"addToCart", payload:{count: productQuantityToAdd, product: {...props.product}}})
+        cartDispatch({type:"addToCart", payload:{count: Number(selection), product: {...props.product}}})
     }
 
     const setNewSelection = function (e) {

@@ -2,6 +2,8 @@
 import "./checkout.css"
 import useInputOnchange from "../useInputOnchange"
 import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { AppContext } from "../context/appContext"
 
 // checkout / place order button
 
@@ -9,6 +11,8 @@ import { Link } from "react-router-dom"
 
 const Checkout = function(props) {
     const [value, error, bindform, clearInput] = useInputOnchange("Enter your delivery address")
+    const appContext = useContext(AppContext)
+    appContext.cartContext.cartDispatch({type: "emptyCart"})
     console.log(JSON.stringify(bindform))
     return (
         <div className="checkout">

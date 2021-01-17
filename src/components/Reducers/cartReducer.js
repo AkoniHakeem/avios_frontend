@@ -40,7 +40,11 @@ const CartReducer = function(cart, action) {
         },
 
         emptyCart(){
-
+            return {
+                ...cart,
+                count: 0,
+                items: []
+            }
         },
 
         default() {

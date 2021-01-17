@@ -6,6 +6,7 @@ import {useRef} from 'react'
 import AuthNav from '../authNav/authNav';
 import Cart from '../cart/cart';
 import React from "react";
+import Seller from '../seller/seller';
 
 const Page = (props) => {
         const sideBarRef = useRef();
@@ -24,6 +25,7 @@ const Page = (props) => {
                     <h3 className="company-name">avios</h3>
                 </div>
                 <div className="nav-actions">
+                    <Seller size="mini"/>
                     <AuthNav/>
                     <Cart size="mini"/>
                 </div>

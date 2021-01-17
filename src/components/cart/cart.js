@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AppContext } from '../context/appContext'
 import './cart.css'
+import config from "../../config"
 
 /* We can create a use states that can be specified by caller like say 'mini', 'fullpage' or  draggable*/
 // this is going to subscribe to  a cart context where it is able to read the cart values
@@ -28,12 +29,13 @@ const Cart = (props) => {
                     appContext.cartContext.cart.items.map(prodObject => {
                         return (
                                 <li key={prodObject.product._id} className="cart-list-item-row">
-                                    <img className="cart-img"  src={`${prodObject.product.imageLocation}`} alt={prodObject.product.name}/>
-                                    <label>{prodObject.product.name}</label>
+                                    {/* `${config.avios_BACKENDURL}${prod.Product_Varieties[0].images}` */}
+                                    <img className="cart-img"  src={`${config.avios_BACKENDURL}${prodObject.product.Product_Varieties[0].images}`} alt={prodObject.product.name}/>
+                                    <label>{prodObject.product.product_name}</label>
                                     <select>
                                         <option value={prodObject.quantity}>{prodObject.quantity}</option>
                                     </select>
-                                    <label><strong>N</strong>{prodObject.product.price * prodObject.quantity}</label>
+                                    <label><strong>N</strong>{prodObject.product.Product_Varieties[0].price * prodObject.quantity}</label>
                                 </li>
                         )
                     }) 

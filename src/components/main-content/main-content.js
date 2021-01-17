@@ -10,6 +10,7 @@ import Checkout from '../cart/checkout'
 import Thanks from '../cart/thanks'
 import Signup from '../authNav/signup'
 import Login from '../authNav/login'
+import Seller from '../seller/seller'
 
 const MainContent = (props) => {
     let requestUrl = config.avios_BACKENDURL+"/api/v1/products/show-products"
@@ -26,15 +27,14 @@ const MainContent = (props) => {
     return(
         <div className="main-content">
             <Switch>
-                <Route exact path="/">""
+                <Route exact path="/">
+                    <ProductsPage/>
                 </Route>
-                {products.map(p => {
-                    return <Route exact key={p.id} path={`/${p.name}`}><ProductsPage/></Route>})}
                 {
                     products.map(
-                        c => {
-                            return <Route exact key={c.id+`${c.name}`} path={`/${c.name}/:productName/:productId`}>
-                                    <ProductDetailsPage />
+                        p => {
+                            return <Route exact key={p.id+`${p.product_name}`} path={`/${p.product_name.split(" ").join("-")}/:productId`}>
+                                    <ProductDetailsPage prod={p}/>
                             </Route>
                         }
                     )
@@ -53,6 +53,9 @@ const MainContent = (props) => {
                 </Route>
                 <Route path="/login">
                     <Login/>
+                </Route>
+                <Route path="/seller">
+                    <Seller/>
                 </Route>
             </Switch>
         </div>

@@ -7,3 +7,33 @@
     position: absolute;
     right:2rem;
 }
+
+.product-pictures-varieties {
+    width: 5rem;
+    height: 3rem;
+    border: .1rem solid var(--border-color);
+    margin: 1rem
+}
+
+.product-pictures-varieties img {
+    width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.product-pictures-varieties-selection {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-image-area {
+    width: 15rem;
+    height: 10rem;
+    border: .1rem solid var(--border-color)
+}
+
+.details-image-area img {
+    width: 12rem;
+    height: 8rem;
+}
+
