@@ -13,7 +13,7 @@ config.environments = {
         avios_BACKENDURL: process.env.backendUrl || "http://localhost:3001"
     },
     "production" : { // We should set the https port always here
-        avios_BACKENDURL: process.env.AVIOS_BACKEND_URL || "https://avios-backend-hjzoc.ondigitalocean.app"
+        avios_BACKENDURL: process.env.AVIOS_BACKEND_URL || "https://avios-backend-xsfgf.ondigitalocean.app"
     }
 }
 
